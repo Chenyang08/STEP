@@ -5,3 +5,5 @@ You can enter either Q or QU in the webpage form and they'll be treated equivale
 
 Camparing the score of words recursively, then find the highest one. 
 If the character in request is satisfied the word in dictionary, calculate scores. Eles the score is 0
+
+
