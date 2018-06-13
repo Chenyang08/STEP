@@ -58,12 +58,14 @@ IDEA:
 
 For the equation which has bracket, we need to extract the content in the bracket, and consider the order of calculating. 
 
-We need to calculate the innermost bracket, thus we need to find the innermost bracket at first. 
+We need to calculate the innermost bracket first, thus we need to find the innermost bracket at first. 
 
 For example, 5*(10/(2+3))+4*5, the rightmost left-bracket “(” should be the innermost bracket. 
 
-However,   5*(10/(2+3))+4*(5+2), the rightmost right-bracket “)” is not the innermost one. And it might let the equation not in order.
+However, in the case 5*(10/(2+3))+4*(5+2), the rightmost left-bracket “(” is not the innermost one. And it might let the equation not in order.
 
-So, we can find the leftmost right-bracket 4*(5+2)+5*(10/(2+3)), even if there are two bracket not in nest structure, we can calculate the equation in order.
+So, we can find the leftmost right-bracket ")" 4*(5+2)+5*(10/(2+3)), even if there are two bracket parallel3, we can calculate the equation in order.
 
-We can implement it by using split() and raplit().
+We can implement it by using split() and raplit(). 
+
+This idea like the sturcture of binarytree. After ectracting and calculating the inner bracket, we need to combine the equation.
