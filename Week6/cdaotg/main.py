@@ -3,7 +3,7 @@ import webapp2
 class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content=-Type'] = 'text/html; charset=UTF-8'
-        self.response.write('<title>パタトクカシー</title>')
+        self.response.write('<title>cdaotg</title>')
         self.response.write('<body><h2>こんにちは！Let\'s play a game ^o^ !</h2>')
         self.response.write('<h1 style="color:#E6675C">Please input two words.</h1>')
         self.response.write('<form><h2><input type ="text" name="a"></h2>')
